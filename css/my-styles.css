@@ -842,3 +842,94 @@ footer .logo {
 
 }
 
+/* Mobile Responsive */
+@media (max-width: 414.98px) {
+    
+    /* Contact Head CSS */
+    .contact-head .body .left {
+        width: 115px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-head .body .right {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .contact-head .body .right a:nth-child(1) {
+        margin-right: 0px !important;
+    }
+
+    /* Banner-1 */
+    .banner {
+        height: 325px;
+        margin-bottom: -45px;
+    }
+
+    .banner__left .main-title {
+        font-size: 50px;
+    }
+
+    .banner__left .sub-title {
+        font-size: 18px;
+    }
+
+    .banner__left .discount-info {
+        font-size: 14px;
+    }
+    
+    .banner__left .discount-code {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 15px 0px;
+    }
+    
+    .banner__left .btn-shop-now {
+        height: 40px;
+        width: 120px;
+    }
+
+    /* Product Info */
+    .product-info .price {
+        font-size: 18px !important;
+    }
+
+    /* Loyalty Section */
+    #loyalty-section .detail {
+        height: 900px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    #loyalty-section .right-ly .title {
+        font-size: 32px;
+        padding-top: 460px !important;
+    }
+
+    #loyalty-section .right-ly .dsc .dsc1 div:nth-child(1),
+    #loyalty-section .right-ly .dsc .dsc2 div:nth-child(1),
+    #loyalty-section .right-ly .dsc .dsc3 div:nth-child(1) {
+        font-size: 12px !important;
+    }
+
+    #loyalty-section .right-ly .dsc .dsc1 div:nth-child(2),
+    #loyalty-section .right-ly .dsc .dsc2 div:nth-child(2),
+    #loyalty-section .right-ly .dsc .dsc3 div:nth-child(2) {
+        font-size: 15px !important;
+    }
+
+    #loyalty-section .right-ly .dsc .dsc1 div:nth-child(3),
+    #loyalty-section .right-ly .dsc .dsc2 div:nth-child(3),
+    #loyalty-section .right-ly .dsc .dsc3 div:nth-child(3) {
+        font-size: 9px !important;
+        padding-bottom: 20px !important;
+    }
+
+    /* Shop by Category */
+    .shop-by-category hr {
+        width: 10%;
+    }
+}
