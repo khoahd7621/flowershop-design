@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Flowershop Homepage</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/my-styles.css">
+</head>
+
+<body>
+    <!-- Contact Head -->
+    <div class="bg-dark py-2">
+        <div class="d-flex container px-4 px-lg-5">
+            <div class="text-center" style="width: 100px;">
+                <a href="#"><i class="bi bi-facebook text-white"></i></a>
+                <a href="#"><i class="bi bi-twitter text-white ms-2 me-2"></i></a>
+                <a href="#"><i class="bi bi-instagram text-white"></i></a>
+            </div>
+            <div class="flex-grow-1 text-end">
+                <a class="text-decoration-none text-white me-2" href=""><i class="bi bi-phone"></i> +84 123456789</a>
+                <a class="text-decoration-none text-white" href=""><i class="bi bi-envelope"></i> info@myflower.com</a>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a href="#!"><img class="img-fluid" width="100px" src="./images/logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#!">All Products</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                            <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Search -->
+                <form class="d-flex mx-auto my-2">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <select class="form-select me-2 w-50" aria-label="Default select example">
+                        <option value="1">Name</option>
+                        <option value="2">Category</option>
+                    </select>
+                    <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+                <div class="d-flex">
+                    <!-- Cart Button -->
+                    <div class="dropdown-hover position-relative">
+                        <a class="btn btn-outline-dark me-2" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            <span class="badge bg-danger text-white ms-1 rounded-pill">0</span>
+                        </a>
+                        <div class="dropdown-menu" style="width: 350px;">
+                            <div class="cart-box">
+                                <div class="empty-cart text-center">
+                                    <img class="img-fluid" src="images/empty-cart.png" alt="Empty Cart Image">
+                                    <p class="pb-3">Your cart is empty</p>
+                                </div>
+                                <div class="unempty-cart">
+                                    <div class="text-start ms-4">New products added</div>
+                                    <div class="product row mt-3 mb-3 w-100 m-0">
+                                        <div class="col-3">
+                                            <img class="img-fluid border border-1"
+                                                src="https://bizweb.dktcdn.net/thumb/large/100/331/067/products/215292870-4115395708568579-7308401028518663784-n.jpg?v=1625567925000"
+                                                alt="Product Images">
+                                        </div>
+                                        <div class="col-6 default-cursor">
+                                            Hello
+                                        </div>
+                                        <div class="col-3 default-cursor text-danger">
+                                            $99000
+                                        </div>
+                                    </div>
+                                    <div class="text-end pe-3"><a href="#" class="btn btn-danger pe-3">Checkout!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Login Button -->
+                    <div class="dropdown-hover position-relative">
+                        <a href="#" class="btn btn-outline-primary">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                        <div class="dropdown-menu" style="width: 350px;">
+                            <!-- Unlog in -->
+                            <form class="px-4 py-3">
+                                <div class="mb-3">
+                                    <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                        placeholder="email@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                        placeholder="Password">
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </form>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">New around here? Sign up</a>
+                            <a class="dropdown-item" href="#">Forgot password?</a>
+                            <!-- Logged in -->
+                            <div class="loggedin">
+                                <div class="user-name default-cursor">
+                                    <i class="bi bi-person-fill"></i><span class="nametxt">Hoang Dang Khoa</span>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="bi bi-gear-fill"></i> Profile</a>
+                                <a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i> Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner 1 -->
+    <div class="banner">
+        <div class="container" style="height: 100%;">
+            <div class="banner__body row position-relative" style="height: 100%;">
+                <div class="banner__left col-md-6 d-flex justify-content-center flex-column">
+                    <div class="sub-title">
+                        Fresh Flower
+                    </div>
+                    <div class="main-title">
+                        Find your own happiness
+                    </div>
+                    <div class="discount-info">
+                        Our Purchase of 50 dollars use coupon code
+                    </div>
+                    <div class="discount-code">
+                        FLOWER20
+                    </div>
+                    <button type="button" class="btn btn-danger btn-shop-now">Shop Now</button>
+                </div>
+                <div
+                    class="banner__right col-md-6 d-flex justify-content-center align-items-center flex-column position-relative">
+                    <img class="img-banner" src="images/banner.jpg" alt="Banner Image">
+                    <div class="crl circle-1 position-absolute"></div>
+                    <div class="crl circle-2 position-absolute"></div>
+                </div>
+                <div class="banner__percentage position-absolute">
+                    SALE UP TO
+                    <div class="number">
+                        50%
+                    </div>
+                </div>
+                <div class="banner__more-infor">
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="icon col-md-3 col-4 d-flex justify-content-end align-items-center">
+                                <i class="bi bi-truck"></i>
+                            </div>
+                            <div class="col-md-9 col-8">
+                                <div class="header">Free shipping</div>
+                                <div>On all orders over $49.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="icon col-md-3 col-4 d-flex justify-content-end align-items-center">
+                                <i class="bi bi-currency-exchange"></i>
+                            </div>
+                            <div class="col-md-9 col-8">
+                                <div class="header">15 days returns</div>
+                                <div>Moneyback guarantee</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="icon col-md-3 col-4 d-flex justify-content-end align-items-center">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </div>
+                            <div class="col-md-9 col-8">
+                                <div class="header">Secure checkout</div>
+                                <div>Protected by Paypal</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="icon col-md-3 col-4 d-flex justify-content-end align-items-center">
+                                <i class="bi bi-gift-fill"></i>
+                            </div>
+                            <div class="col-md-9 col-8">
+                                <div class="header">Offer & gift here</div>
+                                <div>On all orders over</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section Deal of the Day -->
+    <section class="pt-5">
+        <div class="pt-4 d-flex align-items-center justify-content-center fs-1 section-title">
+            <hr class="d-inline-block me-3" width="20%" />
+            Deals of the Day
+            <hr class="d-inline-block ms-3" width="20%" />
+        </div>
+        <div class="container px-4 px-lg-5 mt-4">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <!-- Product -->
+                <div class="col mb-5">
+                    <form style="background-color: #ffffff;">
+                        <div class="product-thumbnail border border-bottom-0">
+                            <a href="#">
+                                <!-- Sale badge-->
+                                <div class="position-absolute bg-black text-white"
+                                    style="padding: 5px 15px; left: 15px; top: 15px;">Available</div>
+                                <!-- Product image-->
+                                <div class="image"><img class="content" class="img-fluid"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg/1200px-Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg"
+                                        alt="Product Images">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Product details-->
+                        <div class="product-info border border-top-0 border-bottom-0">
+                            <div class="category ms-3 mt-3">
+                                Plant
+                            </div>
+                            <div class="name">
+                                <a class="text-decoration-none text-black" href="#">
+                                    SCHEFFLERA
+                                </a>
+                            </div>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <div class="text-center fs-4 fw-bold default-cursor"><span
+                                    class="text-black-50 text-decoration-line-through me-3">$20.00</span>$231.00</div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="text-center pt-4 pb-4 border border-top-0">
+                            <button class="add-to-cart-btn" type="submit"><i class="bi bi-cart-plus-fill"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <form style="background-color: #ffffff;">
+                        <div class="product-thumbnail border border-bottom-0">
+                            <a href="#">
+                                <!-- Sale badge-->
+                                <div class="position-absolute bg-black text-white"
+                                    style="padding: 5px 15px; left: 15px; top: 15px;">Available</div>
+                                <!-- Product image-->
+                                <div class="image"><img class="content" class="img-fluid"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg/1200px-Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg"
+                                        alt="Product Images">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Product details-->
+                        <div class="product-info border border-top-0 border-bottom-0">
+                            <div class="category ms-3 mt-3">
+                                Plant
+                            </div>
+                            <div class="name">
+                                <a class="text-decoration-none text-black" href="#">
+                                    SCHEFFLERA
+                                </a>
+                            </div>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <div class="text-center fs-4 fw-bold default-cursor"><span
+                                    class="text-black-50 text-decoration-line-through me-3">$20.00</span>$231.00</div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="text-center pt-4 pb-4 border border-top-0">
+                            <button class="add-to-cart-btn" type="submit"><i class="bi bi-cart-plus-fill"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <form style="background-color: #ffffff;">
+                        <div class="product-thumbnail border border-bottom-0">
+                            <a href="#">
+                                <!-- Sale badge-->
+                                <div class="position-absolute bg-black text-white"
+                                    style="padding: 5px 15px; left: 15px; top: 15px;">Available</div>
+                                <!-- Product image-->
+                                <div class="image"><img class="content" class="img-fluid"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg/1200px-Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg"
+                                        alt="Product Images">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Product details-->
+                        <div class="product-info border border-top-0 border-bottom-0">
+                            <div class="category ms-3 mt-3">
+                                Plant
+                            </div>
+                            <div class="name">
+                                <a class="text-decoration-none text-black" href="#">
+                                    SCHEFFLERA
+                                </a>
+                            </div>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <div class="text-center fs-4 fw-bold default-cursor"><span
+                                    class="text-black-50 text-decoration-line-through me-3">$20.00</span>$231.00</div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="text-center pt-4 pb-4 border border-top-0">
+                            <button class="add-to-cart-btn" type="submit"><i class="bi bi-cart-plus-fill"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <form style="background-color: #ffffff;">
+                        <div class="product-thumbnail border border-bottom-0">
+                            <a href="#">
+                                <!-- Sale badge-->
+                                <div class="position-absolute bg-black text-white"
+                                    style="padding: 5px 15px; left: 15px; top: 15px;">Available</div>
+                                <!-- Product image-->
+                                <div class="image"><img class="content" class="img-fluid"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg/1200px-Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg"
+                                        alt="Product Images">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Product details-->
+                        <div class="product-info border border-top-0 border-bottom-0">
+                            <div class="category ms-3 mt-3">
+                                Plant
+                            </div>
+                            <div class="name">
+                                <a class="text-decoration-none text-black" href="#">
+                                    SCHEFFLERA
+                                </a>
+                            </div>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <div class="text-center fs-4 fw-bold default-cursor"><span
+                                    class="text-black-50 text-decoration-line-through me-3">$20.00</span>$231.00</div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="text-center pt-4 pb-4 border border-top-0">
+                            <button class="add-to-cart-btn" type="submit"><i class="bi bi-cart-plus-fill"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner 2 -->
+    <div class="banner-2">
+        <div class="layer-color">
+            <div class="container h-100">
+                <div class="default-cursor row text-center d-flex align-items-center justify-content-center h-100 text-white">
+                    <div class="col-6 col-md-3">
+                        <div class="fs-2 fw-bold mb-3">$800Mn+</div>
+                        <div>Transactional values</div>
+                        <div style="font-size: 13px;" class="mt-1 fst-italic text-white-50">From Sale</div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="fs-2 fw-bold mb-3">400+</div>
+                        <div>Product delivered</div>
+                        <div style="font-size: 13px;" class="mt-1 fst-italic text-white-50">Successfully</div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="fs-2 fw-bold mb-3">10+</div>
+                        <div>Years of experience</div>
+                        <div style="font-size: 13px;" class="mt-1 fst-italic text-white-50">70+ Cities</div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="fs-2 fw-bold mb-3">99%</div>
+                        <div>Happy clients & 60%</div>
+                        <div style="font-size: 13px;" class="mt-1 fst-italic text-white-50">Recurring</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section Loyalty -->
+    <section id="loyalty-section" class="pt-5">
+        <div class="d-flex align-items-center justify-content-center default-cursor fs-1 section-title">
+            <hr class="d-inline-block me-3" width="20%" />
+            Loyalty program
+            <hr class="d-inline-block ms-3" width="20%" />
+        </div>
+        <div class="container px-4 px-lg-5 mt-4">
+            <div class="detail row">
+                <div class="col-lg-6 left-ly">
+                    <img class="img-1" src="images/img-0.png" alt="">
+                    <img class="img-2" src="images/img-2.jpg" alt="">
+                    <img class="img-3" src="images/img-1.jpg" alt="">
+                </div>
+                <div class="col-lg-6 right-ly d-flex flex-column align-items-center justify-content-center">
+                    <div class="title default-cursor">A Warm <span class="fw-bold">Welcome</span> and a <span class="fw-bold">Beautiful
+                            Smile</span></div>
+                    <p class="mt-4 mb-5 default-cursor">Just <a href="#" class="text-decoration-none text-danger">Create An Account</a>
+                        and every time you shop online with us, you'll receive Frequent Flower Rewards that will be
+                        applied to your account as store credit for future use. The rewards can be redeemed at checkout
+                        to save on future purchases. Your rewards credit is automatically applied the following day
+                        after purchase.</p>
+                    <div class="row w-100 dsc default-cursor">
+                        <div class="dsc1 col-4 d-flex flex-column justify-content-center align-items-center">
+                            <div
+                                class="w-100 text-center border border-1 border-bottom-0 fw-bold fs-4 pt-3 ps-1 ps-xxl-0 pe-1 pe-xxl-0">
+                                $0 - $500</div>
+                            <div
+                                class="w-100 text-center border border-1 border-top-0 border-bottom-0 text-danger ps-1 ps-xxl-0 pe-1 pe-xxl-0">
+                                7% back</div>
+                            <div class="w-100 text-center border border-1 border-top-0 pb-4 pb-lg-3 ps-1 ps-xxl-0 pe-1 pe-xxl-0"
+                                style="font-size: 12px;">On every dollar you spend</div>
+                        </div>
+                        <div class="dsc2 col-4 d-flex flex-column justify-content-center align-items-center">
+                            <div
+                                class="w-100 text-center border border-1 border-bottom-0 fw-bold fs-4 pt-3 ps-1 ps-xxl-0 pe-1 pe-xxl-0">
+                                $501 - $1500</div>
+                            <div
+                                class="w-100 text-center border border-1 border-top-0 border-bottom-0 text-danger ps-1 ps-xxl-0 pe-1 pe-xxl-0">
+                                10% back</div>
+                            <div class="w-100 text-center border border-1 border-top-0 pb-4 pb-lg-3 ps-1 ps-xxl-0 pe-1 pe-xxl-0"
+                                style="font-size: 12px;">On every dollar you spend</div>
+                        </div>
+                        <div class="dsc3 col-4 d-flex flex-column justify-content-center align-items-center">
+                            <div
+                                class="w-100 text-center border border-1 border-bottom-0 fw-bold fs-4 pt-3 ps-1 ps-xxl-0 pe-1 pe-xxl-0">
+                                $1500+</div>
+                            <div
+                                class="w-100 text-center border border-1 border-top-0 border-bottom-0 text-danger ps-1 ps-xxl-0 pe-1 pe-xxl-0">
+                                15% back</div>
+                            <div class="w-100 text-center border border-1 border-top-0 pb-4 pb-lg-3 ps-1 ps-xxl-0 pe-1 pe-xxl-0"
+                                style="font-size: 12px;">On every dollar you spend</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Best Seller -->
+    <section class="pt-5">
+        <div style="background-color: #f3f3f3;">
+            <div class="pt-4 d-flex align-items-center justify-content-center fs-1 section-title">
+                <hr class="d-inline-block me-3" width="20%" />
+                Best Seller
+                <hr class="d-inline-block ms-3" width="20%" />
+            </div>
+            <div class="container px-4 px-lg-5 mt-4">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <!-- Product -->
+                    <div class="col mb-5">
+                        <form style="background-color: #ffffff;">
+                            <div class="product-thumbnail border border-bottom-0">
+                                <a href="#">
+                                    <!-- Sale badge-->
+                                    <div class="position-absolute bg-black text-white"
+                                        style="padding: 5px 15px; left: 15px; top: 15px;">Available</div>
+                                    <!-- Product image-->
+                                    <div class="image"><img class="content" class="img-fluid"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg/1200px-Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg"
+                                            alt="Product Images">
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product details-->
+                            <div class="product-info border border-top-0 border-bottom-0">
+                                <div class="category ms-3 mt-3">
+                                    Plant
+                                </div>
+                                <div class="name">
+                                    <a class="text-decoration-none text-black" href="#">
+                                        SCHEFFLERA
+                                    </a>
+                                </div>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <div class="text-center fs-4 fw-bold default-cursor"><span
+                                        class="text-black-50 text-decoration-line-through me-3">$20.00</span>$231.00</div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="text-center pt-4 pb-4 border border-top-0">
+                                <button class="add-to-cart-btn" type="submit"><i class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Product -->
+                    <div class="col mb-5">
+                        <form style="background-color: #ffffff;">
+                            <div class="product-thumbnail border border-bottom-0">
+                                <a href="#">
+                                    <!-- Sale badge-->
+                                    <div class="position-absolute bg-black text-white"
+                                        style="padding: 5px 15px; left: 15px; top: 15px;">Available</div>
+                                    <!-- Product image-->
+                                    <div class="image"><img class="content" class="img-fluid"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg/1200px-Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg"
+                                            alt="Product Images">
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product details-->
+                            <div class="product-info border border-top-0 border-bottom-0">
+                                <div class="category ms-3 mt-3">
+                                    Plant
+                                </div>
+                                <div class="name">
+                                    <a class="text-decoration-none text-black" href="#">
+                                        SCHEFFLERA
+                                    </a>
+                                </div>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <div class="text-center fs-4 fw-bold default-cursor"><span
+                                        class="text-black-50 text-decoration-line-through me-3">$20.00</span>$231.00</div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="text-center pt-4 pb-4 border border-top-0">
+                                <button class="add-to-cart-btn" type="submit"><i class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Product -->
+                    <div class="col mb-5">
+                        <form style="background-color: #ffffff;">
+                            <div class="product-thumbnail border border-bottom-0">
+                                <a href="#">
+                                    <!-- Sale badge-->
+                                    <div class="position-absolute bg-black text-white"
+                                        style="padding: 5px 15px; left: 15px; top: 15px;">Available</div>
+                                    <!-- Product image-->
+                                    <div class="image"><img class="content" class="img-fluid"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg/1200px-Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg"
+                                            alt="Product Images">
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product details-->
+                            <div class="product-info border border-top-0 border-bottom-0">
+                                <div class="category ms-3 mt-3">
+                                    Plant
+                                </div>
+                                <div class="name">
+                                    <a class="text-decoration-none text-black" href="#">
+                                        SCHEFFLERA
+                                    </a>
+                                </div>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <div class="text-center fs-4 fw-bold default-cursor"><span
+                                        class="text-black-50 text-decoration-line-through me-3">$20.00</span>$231.00</div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="text-center pt-4 pb-4 border border-top-0">
+                                <button class="add-to-cart-btn" type="submit"><i class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Product -->
+                    <div class="col mb-5">
+                        <form style="background-color: #ffffff;">
+                            <div class="product-thumbnail border border-bottom-0">
+                                <a href="#">
+                                    <!-- Sale badge-->
+                                    <div class="position-absolute bg-black text-white"
+                                        style="padding: 5px 15px; left: 15px; top: 15px;">Available</div>
+                                    <!-- Product image-->
+                                    <div class="image"><img class="content" class="img-fluid"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg/1200px-Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg"
+                                            alt="Product Images">
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product details-->
+                            <div class="product-info border border-top-0 border-bottom-0">
+                                <div class="category ms-3 mt-3">
+                                    Plant
+                                </div>
+                                <div class="name">
+                                    <a class="text-decoration-none text-black" href="#">
+                                        SCHEFFLERA
+                                    </a>
+                                </div>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <div class="text-center fs-4 fw-bold default-cursor"><span
+                                        class="text-black-50 text-decoration-line-through me-3">$20.00</span>$231.00</div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="text-center pt-4 pb-4 border border-top-0">
+                                <button class="add-to-cart-btn" type="submit"><i class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop By Category -->
+    <section class="pt-4 shop-by-category">
+        <div class="d-flex align-items-center justify-content-center default-cursor fs-1 section-title">
+            <hr class="d-inline-block me-3" width="20%" />
+            Shop by Category
+            <hr class="d-inline-block ms-3" width="20%" />
+        </div>
+        <div class="container px-4 px-lg-5 mt-4">
+            <div class="row content d-flex align-items-center justify-content-center">
+                <a href="#" class="col-6 col-lg-3 d-flex align-items-center justify-content-end position-relative">
+                    <img src="./images/Category (1).png" alt="">
+                    <div class="title position-absolute">Catus</div>
+                    <div class="sub-title position-absolute">Products</div>
+                </a>
+                <a href="#" class="col-6 col-lg-3 d-flex align-items-center justify-content-end position-relative">
+                    <img src="./images/Category (2).png" alt="">
+                    <div class="title position-absolute">Spring</div>
+                    <div class="sub-title position-absolute">Save 30%</div>
+                </a>
+                <a href="#" class="col-6 col-lg-3 d-flex align-items-center justify-content-end position-relative">
+                    <img src="./images/Category (3).png" alt="">
+                    <div class="title position-absolute">House</div>
+                    <div class="sub-title position-absolute">New 2022</div>
+                </a>
+                <a href="#" class="col-6 col-lg-3 d-flex align-items-center justify-content-end position-relative">
+                    <img src="./images/Category (4).png" alt="">
+                    <div class="title position-absolute">Collection</div>
+                    <div class="sub-title position-absolute">Flowers</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Blog -->
+    <section class="pt-1 pb-4 latest-blog">
+        <div class="d-flex align-items-center default-cursor justify-content-center fs-1 section-title">
+            <hr class="d-inline-block me-3" width="20%" />
+            Latest Blog
+            <hr class="d-inline-block ms-3" width="20%" />
+        </div>
+        <div class="container px-4 px-lg-5 mt-4">
+            <div class="row d-flex align-items-center justify-content-center">
+                <!-- Blog post-->
+                <div class="col-6 col-lg-4 ps-3 pe-3">
+                    <a href="#!"><img class="card-img-top" src="https://timelinecovers.pro/facebook-cover/download/flowers-dahlias-roses-and-carnations-in-pastels-facebook-cover.jpg" alt="..." /></a>
+                    <div class="card-body">
+                        <div class="small text-muted default-cursor">January 1, 2021</div>
+                        <h2 class="card-title h4 default-cursor">Post Title</h2>
+                        <p class="card-text default-cursor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                        <a class="btn btn-primary" href="#!">Read more →</a>
+                    </div>
+                </div>
+                <!-- Blog post-->
+                <div class="col-6 col-lg-4 ps-3 pe-3">
+                    <a href="#!"><img class="card-img-top" src="https://www.fg-a.com/facebook-images/flowers-white.jpg" alt="..." /></a>
+                    <div class="card-body">
+                        <div class="small text-muted default-cursor">January 1, 2021</div>
+                        <h2 class="card-title h4 default-cursor">Post Title</h2>
+                        <p class="card-text default-cursor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                        <a class="btn btn-primary" href="#!">Read more →</a>
+                    </div>
+                </div>
+                <!-- Blog post-->
+                <div class="col-6 col-lg-4 ps-3 pe-3">
+                    <a href="#!"><img class="card-img-top" src="https://newevolutiondesigns.com/images/freebies/flowers-facebook-cover-2.jpg" alt="..." /></a>
+                    <div class="card-body">
+                        <div class="small text-muted default-cursor">January 1, 2021</div>
+                        <h2 class="card-title h4 default-cursor">Post Title</h2>
+                        <p class="card-text default-cursor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                        <a class="btn btn-primary" href="#!">Read more →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <div class="subcribe-receive-email">
+        <div class="layer">
+            <div class="container">
+                <form class="text-center pt-5 pb-5">
+                    <div class="text-uppercase title default-cursor">Our newsletter</div>
+                    <div class="mt-4 mb-4 label default-cursor">Enter Your Email Address To Join Our Mailing List And
+                        Keep Yourself
+                        Update</div>
+                    <div class="mb-3">
+                        <input type="email" placeholder="Enter your email..." required>
+                    </div>
+                    <button class="fw-bold" type="submit" name="action"
+                        value="getEmailRequestNotification">Subcribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img class="logo" src="images/logo.png" alt="Shop Logo">
+                    <p class="default-cursor">Duis aute irure dolor in reprehendenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatuur.</p>
+                </div>
+                <div id="quick-link" class="col-lg-6">
+                    <div class="title default-cursor">Quick Links</div>
+                    <table>
+                        <tr>
+                            <td>
+                                <ul class="quick-ul">
+                                    <li type="square"><a href="#">Shop Flowers</a></li>
+                                    <li type="square"><a href="#">Shop Plants</a></li>
+                                    <li type="square"><a href="#">Weddings</a></li>
+                                    <li type="square"><a href="#">Funeral</a></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="quick-ul">
+                                    <li type="square"><a href="#">Flower</a></li>
+                                    <li type="square"><a href="#">Delivery</a></li>
+                                    <li type="square"><a href="#">Contact Us</a></li>
+                                    <li type="square"><a href="#">Terms and Conditions</a></li>
+                                </ul>
+                            </td>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-lg-3 mailing-address">
+                    <div class="title default-cursor">Mailing Address</div>
+                    <div class="default-cursor"><i class="bi bi-building"></i> 11700 183 Rd St, Artesia, CA 90701
+                    </div>
+                    <div class="default-cursor"><i class="bi bi-phone"></i> +84 123456789</div>
+                    <div class="default-cursor"><i class="bi bi-envelope"></i> info@myflower.com</div>
+                </div>
+            </div>
+            <p class="copyright text-center default-cursor">© Copy right 2022 flower. | All Right Reserved.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
