@@ -1,3 +1,7 @@
+.fs-14px {
+    font-size: 14px !important;
+}
+
 @media (min-width: 992px) {
     .dropdown-hover:hover .dropdown-menu {
         display: block;
@@ -638,7 +642,7 @@
 
 .shop-by-category .content .sub-title {
     font-size: 20px;
-    color: #808080;
+    color: #0037ff;
     top: 130px;
     left: 35px;
 }
@@ -861,6 +865,15 @@ footer .logo {
 
     .contact-head .body .right a:nth-child(1) {
         margin-right: 0px !important;
+    }
+
+    /* Navigation */
+    .btn-box {
+        flex-direction: column;
+    }
+
+    .btn-box .login-btn {
+        margin-top: 10px;
     }
 
     /* Banner-1 */
